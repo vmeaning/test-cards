@@ -7,11 +7,10 @@ let aCard = {
 }
 
 //constructor
-function createTheCard(suit, value){
+function TheCard(suit, value){
     this.__proto__ = aCard;
-    let s = suit.toUpperCase();
-    this.suit = s;
+    this.suit = suit.toUpperCase();
     this.value = value;
-    this.screenName = s + value;
+    this.screenName = this.suit + this.value;
     // TODO: сделать проверку валидности входных данных. Объект не должен создаваться, если данные не валидные
 }
